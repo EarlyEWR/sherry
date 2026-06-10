@@ -1,0 +1,6 @@
+/**: # Wildcard key (broad): use /** so params apply regardless of node name.
+  ros__parameters:
+    udp_port: 8091
+    target_ip: "127.0.0.1"
+    qos_reliability: "best_effort"
+    qos_depth: 10

@@ -1,0 +1,19 @@
+services:
+  telemetry_bridge_bridge:
+    profiles: ["bridge"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: telemetry-bridge-bridge
+    container_name: telemetry-bridge-bridge
+    ports:
+      - "${PORT:-8091}:${PORT:-8091}/udp"
+  
+  telemetry_bridge_host:
+    profiles: ["host"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: telemetry-bridge:sfoxy
+    container_name: telemetry-bridge-host
+    network_mode: host
