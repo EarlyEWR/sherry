@@ -46,6 +46,8 @@ struct LatencyStats_
       this->p95_ms = 0.0;
       this->p99_ms = 0.0;
       this->max_ms = 0.0;
+      this->sequence_gap_count = 0ull;
+      this->stale_packet_count = 0ull;
     }
   }
 
@@ -59,6 +61,8 @@ struct LatencyStats_
       this->p95_ms = 0.0;
       this->p99_ms = 0.0;
       this->max_ms = 0.0;
+      this->sequence_gap_count = 0ull;
+      this->stale_packet_count = 0ull;
     }
   }
 
@@ -78,6 +82,12 @@ struct LatencyStats_
   using _max_ms_type =
     double;
   _max_ms_type max_ms;
+  using _sequence_gap_count_type =
+    uint64_t;
+  _sequence_gap_count_type sequence_gap_count;
+  using _stale_packet_count_type =
+    uint64_t;
+  _stale_packet_count_type stale_packet_count;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -108,6 +118,18 @@ struct LatencyStats_
     const double & _arg)
   {
     this->max_ms = _arg;
+    return *this;
+  }
+  Type & set__sequence_gap_count(
+    const uint64_t & _arg)
+  {
+    this->sequence_gap_count = _arg;
+    return *this;
+  }
+  Type & set__stale_packet_count(
+    const uint64_t & _arg)
+  {
+    this->stale_packet_count = _arg;
     return *this;
   }
 
@@ -166,6 +188,12 @@ struct LatencyStats_
       return false;
     }
     if (this->max_ms != other.max_ms) {
+      return false;
+    }
+    if (this->sequence_gap_count != other.sequence_gap_count) {
+      return false;
+    }
+    if (this->stale_packet_count != other.stale_packet_count) {
       return false;
     }
     return true;

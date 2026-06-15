@@ -62,6 +62,8 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
         '_p95_ms',
         '_p99_ms',
         '_max_ms',
+        '_sequence_gap_count',
+        '_stale_packet_count',
     ]
 
     _fields_and_field_types = {
@@ -70,6 +72,8 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
         'p95_ms': 'double',
         'p99_ms': 'double',
         'max_ms': 'double',
+        'sequence_gap_count': 'uint64',
+        'stale_packet_count': 'uint64',
     }
 
     SLOT_TYPES = (
@@ -78,6 +82,8 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -90,6 +96,8 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
         self.p95_ms = kwargs.get('p95_ms', float())
         self.p99_ms = kwargs.get('p99_ms', float())
         self.max_ms = kwargs.get('max_ms', float())
+        self.sequence_gap_count = kwargs.get('sequence_gap_count', int())
+        self.stale_packet_count = kwargs.get('stale_packet_count', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -129,6 +137,10 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
         if self.p99_ms != other.p99_ms:
             return False
         if self.max_ms != other.max_ms:
+            return False
+        if self.sequence_gap_count != other.sequence_gap_count:
+            return False
+        if self.stale_packet_count != other.stale_packet_count:
             return False
         return True
 
@@ -202,3 +214,33 @@ class LatencyStats(metaclass=Metaclass_LatencyStats):
                 isinstance(value, float), \
                 "The 'max_ms' field must be of type 'float'"
         self._max_ms = value
+
+    @property
+    def sequence_gap_count(self):
+        """Message field 'sequence_gap_count'."""
+        return self._sequence_gap_count
+
+    @sequence_gap_count.setter
+    def sequence_gap_count(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'sequence_gap_count' field must be of type 'int'"
+            assert value >= 0 and value < 18446744073709551616, \
+                "The 'sequence_gap_count' field must be an unsigned integer in [0, 18446744073709551615]"
+        self._sequence_gap_count = value
+
+    @property
+    def stale_packet_count(self):
+        """Message field 'stale_packet_count'."""
+        return self._stale_packet_count
+
+    @stale_packet_count.setter
+    def stale_packet_count(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'stale_packet_count' field must be of type 'int'"
+            assert value >= 0 and value < 18446744073709551616, \
+                "The 'stale_packet_count' field must be an unsigned integer in [0, 18446744073709551615]"
+        self._stale_packet_count = value

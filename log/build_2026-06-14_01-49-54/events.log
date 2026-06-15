@@ -1,0 +1,227 @@
+[0.000000] (-) TimerEvent: {}
+[0.000132] (-) JobUnselected: {'identifier': 'sim_clock'}
+[0.000157] (-) JobUnselected: {'identifier': 'spacecraft_tf'}
+[0.000169] (-) JobUnselected: {'identifier': 'thruster_control'}
+[0.000337] (telemetry_bridge) JobQueued: {'identifier': 'telemetry_bridge', 'dependencies': OrderedDict()}
+[0.000402] (telemetry_bridge) JobStarted: {'identifier': 'telemetry_bridge'}
+[0.009413] (telemetry_bridge) JobProgress: {'identifier': 'telemetry_bridge', 'progress': 'cmake'}
+[0.009930] (telemetry_bridge) JobProgress: {'identifier': 'telemetry_bridge', 'progress': 'build'}
+[0.010325] (telemetry_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/telemetry_bridge', '--', '-j16', '-l16'], 'cwd': '/workspace/build/telemetry_bridge', 'env': OrderedDict([('HOSTNAME', '76c96bff4fba'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DOCKER_TEST_RUN', '1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('PWD', '/workspace/build/telemetry_bridge'), ('LC_ALL', 'C.UTF-8'), ('BUILD_TESTING', 'ON'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.055591] (telemetry_bridge) StdoutLine: {'line': b'[  9%] Built target gtest_main\n'}
+[0.055784] (telemetry_bridge) StdoutLine: {'line': b'[  9%] Built target telemetry_bridge__cpp\n'}
+[0.055846] (telemetry_bridge) StdoutLine: {'line': b'[  9%] Built target gtest\n'}
+[0.057939] (telemetry_bridge) StdoutLine: {'line': b'[ 17%] Built target telemetry_bridge__rosidl_generator_c\n'}
+[0.071058] (telemetry_bridge) StdoutLine: {'line': b'[ 21%] Built target latency_test\n'}
+[0.071777] (telemetry_bridge) StdoutLine: {'line': b'[ 28%] Built target telemetry_bridge__rosidl_typesupport_cpp\n'}
+[0.072453] (telemetry_bridge) StdoutLine: {'line': b'[ 36%] Built target telemetry_bridge__rosidl_typesupport_introspection_cpp\n'}
+[0.072985] (telemetry_bridge) StdoutLine: {'line': b'[ 44%] Built target telemetry_bridge__rosidl_typesupport_fastrtps_cpp\n'}
+[0.074194] (telemetry_bridge) StdoutLine: {'line': b'[ 51%] Built target telemetry_bridge__rosidl_typesupport_c\n'}
+[0.074884] (telemetry_bridge) StdoutLine: {'line': b'[ 59%] Built target telemetry_bridge__rosidl_typesupport_introspection_c\n'}
+[0.091707] (telemetry_bridge) StdoutLine: {'line': b'[ 67%] Built target telemetry_bridge__rosidl_typesupport_fastrtps_c\n'}
+[0.099870] (-) TimerEvent: {}
+[0.106307] (telemetry_bridge) StdoutLine: {'line': b'[ 67%] Built target telemetry_bridge\n'}
+[0.122328] (telemetry_bridge) StdoutLine: {'line': b'[ 69%] Built target telemetry_bridge__py\n'}
+[0.130693] (telemetry_bridge) StdoutLine: {'line': b'Scanning dependencies of target telemetry_bridge_nodes\n'}
+[0.140259] (telemetry_bridge) StdoutLine: {'line': b'[ 75%] Built target telemetry_bridge__python\n'}
+[0.141621] (telemetry_bridge) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o\n'}
+[0.156477] (telemetry_bridge) StdoutLine: {'line': b'[ 80%] Built target telemetry_bridge__rosidl_typesupport_c__pyext\n'}
+[0.156639] (telemetry_bridge) StdoutLine: {'line': b'[ 84%] Built target telemetry_bridge__rosidl_typesupport_introspection_c__pyext\n'}
+[0.157143] (telemetry_bridge) StdoutLine: {'line': b'[ 88%] Built target telemetry_bridge__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.199960] (-) TimerEvent: {}
+[0.300142] (-) TimerEvent: {}
+[0.400311] (-) TimerEvent: {}
+[0.500472] (-) TimerEvent: {}
+[0.600639] (-) TimerEvent: {}
+[0.700806] (-) TimerEvent: {}
+[0.800963] (-) TimerEvent: {}
+[0.901130] (-) TimerEvent: {}
+[1.001296] (-) TimerEvent: {}
+[1.101468] (-) TimerEvent: {}
+[1.201648] (-) TimerEvent: {}
+[1.301817] (-) TimerEvent: {}
+[1.401996] (-) TimerEvent: {}
+[1.502160] (-) TimerEvent: {}
+[1.602327] (-) TimerEvent: {}
+[1.702489] (-) TimerEvent: {}
+[1.802646] (-) TimerEvent: {}
+[1.902802] (-) TimerEvent: {}
+[2.002951] (-) TimerEvent: {}
+[2.103107] (-) TimerEvent: {}
+[2.203271] (-) TimerEvent: {}
+[2.303435] (-) TimerEvent: {}
+[2.403593] (-) TimerEvent: {}
+[2.503735] (-) TimerEvent: {}
+[2.603887] (-) TimerEvent: {}
+[2.704047] (-) TimerEvent: {}
+[2.720080] (telemetry_bridge) StdoutLine: {'line': b'[ 90%] Linking CXX shared library libtelemetry_bridge_nodes.so\n'}
+[2.804154] (-) TimerEvent: {}
+[2.904310] (-) TimerEvent: {}
+[2.955623] (telemetry_bridge) StdoutLine: {'line': b'[ 92%] Built target telemetry_bridge_nodes\n'}
+[2.977869] (telemetry_bridge) StdoutLine: {'line': b'Scanning dependencies of target udp_bridge\n'}
+[2.978979] (telemetry_bridge) StdoutLine: {'line': b'Scanning dependencies of target monitor_test\n'}
+[2.988839] (telemetry_bridge) StdoutLine: {'line': b'[ 94%] Building CXX object CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o\n'}
+[2.989439] (telemetry_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/monitor_test.dir/workspace/src/tests/monitor_test.cpp.o\n'}
+[3.004376] (-) TimerEvent: {}
+[3.104503] (-) TimerEvent: {}
+[3.204658] (-) TimerEvent: {}
+[3.304816] (-) TimerEvent: {}
+[3.404975] (-) TimerEvent: {}
+[3.505150] (-) TimerEvent: {}
+[3.605340] (-) TimerEvent: {}
+[3.705528] (-) TimerEvent: {}
+[3.805702] (-) TimerEvent: {}
+[3.905863] (-) TimerEvent: {}
+[4.006021] (-) TimerEvent: {}
+[4.051245] (telemetry_bridge) StdoutLine: {'line': b'[ 98%] Linking CXX executable udp_bridge\n'}
+[4.106117] (-) TimerEvent: {}
+[4.146661] (telemetry_bridge) StdoutLine: {'line': b'[ 98%] Built target udp_bridge\n'}
+[4.206169] (-) TimerEvent: {}
+[4.306343] (-) TimerEvent: {}
+[4.406516] (-) TimerEvent: {}
+[4.489771] (telemetry_bridge) StdoutLine: {'line': b'[100%] Linking CXX executable monitor_test\n'}
+[4.506574] (-) TimerEvent: {}
+[4.606701] (-) TimerEvent: {}
+[4.621646] (telemetry_bridge) StdoutLine: {'line': b'[100%] Built target monitor_test\n'}
+[4.629852] (telemetry_bridge) CommandEnded: {'returncode': 0}
+[4.683537] (telemetry_bridge) JobProgress: {'identifier': 'telemetry_bridge', 'progress': 'install'}
+[4.692008] (telemetry_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/telemetry_bridge'], 'cwd': '/workspace/build/telemetry_bridge', 'env': OrderedDict([('HOSTNAME', '76c96bff4fba'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DOCKER_TEST_RUN', '1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('PWD', '/workspace/build/telemetry_bridge'), ('LC_ALL', 'C.UTF-8'), ('BUILD_TESTING', 'ON'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.699042] (telemetry_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.699274] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/ament_index/resource_index/rosidl_interfaces/telemetry_bridge\n'}
+[4.699311] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.699344] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.699440] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.699469] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/telemetry_state.h\n'}
+[4.699498] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.699563] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__type_support.h\n'}
+[4.699592] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__functions.c\n'}
+[4.699648] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__struct.h\n'}
+[4.699750] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__struct.h\n'}
+[4.699870] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__functions.h\n'}
+[4.699981] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__functions.h\n'}
+[4.700116] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__type_support.h\n'}
+[4.700218] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__functions.c\n'}
+[4.700327] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/latency_stats.h\n'}
+[4.700486] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/library_path.sh\n'}
+[4.700548] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/library_path.dsv\n'}
+[4.701305] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_generator_c.so\n'}
+[4.701646] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_generator_c.so" to ""\n'}
+[4.701730] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.701807] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.701834] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.701860] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__rosidl_typesupport_fastrtps_c.h\n'}
+[4.701919] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h\n'}
+[4.702014] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.702255] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so\n'}
+[4.702614] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.702693] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.702790] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.702844] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.702870] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.702922] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/dds_fastrtps\n'}
+[4.702949] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.702975] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.703241] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.703621] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.703767] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.703796] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.703823] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.703885] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_introspection_c.h\n'}
+[4.703913] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__type_support.c\n'}
+[4.703974] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__rosidl_typesupport_introspection_c.h\n'}
+[4.704079] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__type_support.c\n'}
+[4.704213] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.704440] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_introspection_c.so\n'}
+[4.704771] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.705133] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_c.so\n'}
+[4.705439] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_c.so" to ""\n'}
+[4.705555] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.705614] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.705645] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.705701] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__traits.hpp\n'}
+[4.705730] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__builder.hpp\n'}
+[4.705803] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__struct.hpp\n'}
+[4.705916] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__type_support.hpp\n'}
+[4.706025] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__struct.hpp\n'}
+[4.706146] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__type_support.hpp\n'}
+[4.706251] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__traits.hpp\n'}
+[4.706358] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__builder.hpp\n'}
+[4.706467] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.706527] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/telemetry_state.hpp\n'}
+[4.706596] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/latency_stats.hpp\n'}
+[4.706718] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge\n'}
+[4.706830] (-) TimerEvent: {}
+[4.706840] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg\n'}
+[4.706870] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail\n'}
+[4.706896] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__type_support.cpp\n'}
+[4.706953] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/latency_stats__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.707039] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__type_support.cpp\n'}
+[4.707161] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/include/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.707703] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_introspection_cpp.so\n'}
+[4.708071] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.708428] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_cpp.so\n'}
+[4.708749] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_cpp.so" to ""\n'}
+[4.708870] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/pythonpath.sh\n'}
+[4.708928] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/pythonpath.dsv\n'}
+[4.709013] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/__init__.py\n'}
+[4.726074] (telemetry_bridge) StdoutLine: {'line': b"Compiling '/workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/__init__.py'...\n"}
+[4.728193] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg\n'}
+[4.728322] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg/__init__.py\n'}
+[4.728442] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg/_latency_stats_s.c\n'}
+[4.728558] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg/_telemetry_state_s.c\n'}
+[4.728667] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg/_telemetry_state.py\n'}
+[4.728783] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/msg/_latency_stats.py\n'}
+[4.729379] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.729865] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.730181] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.730634] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.730903] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.731324] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/python3.8/site-packages/telemetry_bridge/telemetry_bridge_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.731521] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__python.so\n'}
+[4.731841] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/libtelemetry_bridge__python.so" to ""\n'}
+[4.731897] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/TelemetryState.idl\n'}
+[4.732011] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/LatencyStats.idl\n'}
+[4.732178] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/TelemetryState.msg\n'}
+[4.732280] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/LatencyStats.msg\n'}
+[4.732865] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/lib/telemetry_bridge/udp_bridge\n'}
+[4.733367] (telemetry_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/telemetry_bridge/lib/telemetry_bridge/udp_bridge" to ""\n'}
+[4.733428] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/launch\n'}
+[4.733470] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/launch/bridge_launch.py\n'}
+[4.733532] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/config\n'}
+[4.733583] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/config/bridge_params.yaml\n'}
+[4.733629] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/ament_index/resource_index/package_run_dependencies/telemetry_bridge\n'}
+[4.733758] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/ament_index/resource_index/parent_prefix_path/telemetry_bridge\n'}
+[4.733805] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/ament_prefix_path.sh\n'}
+[4.733857] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/ament_prefix_path.dsv\n'}
+[4.733972] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/path.sh\n'}
+[4.734023] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/path.dsv\n'}
+[4.734137] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/local_setup.bash\n'}
+[4.734191] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/local_setup.sh\n'}
+[4.734257] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/local_setup.zsh\n'}
+[4.734283] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/local_setup.dsv\n'}
+[4.734376] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/package.dsv\n'}
+[4.734512] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/ament_index/resource_index/packages/telemetry_bridge\n'}
+[4.734656] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_generator_cExport.cmake\n'}
+[4.734700] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.734948] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.734996] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.735230] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_cExport.cmake\n'}
+[4.735285] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.735497] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_generator_cppExport.cmake\n'}
+[4.735646] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.735695] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.735922] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_cppExport.cmake\n'}
+[4.735971] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridge__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.736098] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/rosidl_cmake-extras.cmake\n'}
+[4.736154] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.736227] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.736272] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.736318] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.736383] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.736445] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.736471] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridgeConfig.cmake\n'}
+[4.736497] (telemetry_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/telemetry_bridge/share/telemetry_bridge/cmake/telemetry_bridgeConfig-version.cmake\n'}
+[4.736522] (telemetry_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/telemetry_bridge/share/telemetry_bridge/package.xml\n'}
+[4.737992] (telemetry_bridge) CommandEnded: {'returncode': 0}
+[4.806951] (-) TimerEvent: {}
+[4.810960] (telemetry_bridge) JobEnded: {'identifier': 'telemetry_bridge', 'rc': 0}
+[4.811322] (-) EventReactorShutdown: {}

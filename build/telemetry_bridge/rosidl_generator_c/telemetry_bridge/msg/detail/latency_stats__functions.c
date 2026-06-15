@@ -30,6 +30,8 @@ telemetry_bridge__msg__LatencyStats__init(telemetry_bridge__msg__LatencyStats * 
   // p95_ms
   // p99_ms
   // max_ms
+  // sequence_gap_count
+  // stale_packet_count
   return true;
 }
 
@@ -45,6 +47,8 @@ telemetry_bridge__msg__LatencyStats__fini(telemetry_bridge__msg__LatencyStats * 
   // p95_ms
   // p99_ms
   // max_ms
+  // sequence_gap_count
+  // stale_packet_count
 }
 
 bool
@@ -75,6 +79,14 @@ telemetry_bridge__msg__LatencyStats__are_equal(const telemetry_bridge__msg__Late
   if (lhs->max_ms != rhs->max_ms) {
     return false;
   }
+  // sequence_gap_count
+  if (lhs->sequence_gap_count != rhs->sequence_gap_count) {
+    return false;
+  }
+  // stale_packet_count
+  if (lhs->stale_packet_count != rhs->stale_packet_count) {
+    return false;
+  }
   return true;
 }
 
@@ -100,6 +112,10 @@ telemetry_bridge__msg__LatencyStats__copy(
   output->p99_ms = input->p99_ms;
   // max_ms
   output->max_ms = input->max_ms;
+  // sequence_gap_count
+  output->sequence_gap_count = input->sequence_gap_count;
+  // stale_packet_count
+  output->stale_packet_count = input->stale_packet_count;
   return true;
 }
 

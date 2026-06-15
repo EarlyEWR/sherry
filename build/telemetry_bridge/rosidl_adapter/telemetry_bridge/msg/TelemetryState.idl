@@ -2,6 +2,7 @@
 // with input from telemetry_bridge/../msg/TelemetryState.msg
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Pose.idl"
 #include "std_msgs/msg/Header.idl"
 
 module telemetry_bridge {
@@ -30,6 +31,10 @@ module telemetry_bridge {
       @verbatim (language="comment", text=
         " Sequence number to detect out-of-order UDP packets or gaps")
       uint64 sequence_id;
+
+      @verbatim (language="comment", text=
+        " Full 6-DOF pose: position (mirrors x/y/z above) + orientation quaternion")
+      geometry_msgs::msg::Pose pose;
     };
   };
 };

@@ -12,6 +12,12 @@ CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__traits.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__traits.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__traits.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/StateMonitorNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp
@@ -323,6 +329,12 @@ CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ro
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__traits.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__traits.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__traits.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
 CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp

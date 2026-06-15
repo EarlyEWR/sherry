@@ -40,6 +40,10 @@ class Metaclass_TelemetryState(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__telemetry_state
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__telemetry_state
 
+            from geometry_msgs.msg import Pose
+            if Pose.__class__._TYPE_SUPPORT is None:
+                Pose.__class__.__import_type_support__()
+
             from std_msgs.msg import Header
             if Header.__class__._TYPE_SUPPORT is None:
                 Header.__class__.__import_type_support__()
@@ -65,6 +69,7 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
         '_vy',
         '_vz',
         '_sequence_id',
+        '_pose',
     ]
 
     _fields_and_field_types = {
@@ -76,6 +81,7 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
         'vy': 'double',
         'vz': 'double',
         'sequence_id': 'uint64',
+        'pose': 'geometry_msgs/Pose',
     }
 
     SLOT_TYPES = (
@@ -87,6 +93,7 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Pose'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -102,6 +109,8 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
         self.vy = kwargs.get('vy', float())
         self.vz = kwargs.get('vz', float())
         self.sequence_id = kwargs.get('sequence_id', int())
+        from geometry_msgs.msg import Pose
+        self.pose = kwargs.get('pose', Pose())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -147,6 +156,8 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
         if self.vz != other.vz:
             return False
         if self.sequence_id != other.sequence_id:
+            return False
+        if self.pose != other.pose:
             return False
         return True
 
@@ -261,3 +272,17 @@ class TelemetryState(metaclass=Metaclass_TelemetryState):
             assert value >= 0 and value < 18446744073709551616, \
                 "The 'sequence_id' field must be an unsigned integer in [0, 18446744073709551615]"
         self._sequence_id = value
+
+    @property
+    def pose(self):
+        """Message field 'pose'."""
+        return self._pose
+
+    @pose.setter
+    def pose(self, value):
+        if __debug__:
+            from geometry_msgs.msg import Pose
+            assert \
+                isinstance(value, Pose), \
+                "The 'pose' field must be a sub message of type 'Pose'"
+        self._pose = value

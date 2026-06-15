@@ -12,6 +12,12 @@ CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/builti
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__traits.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__traits.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__traits.hpp
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
 CMakeFiles/udp_bridge.dir/workspace/src/main.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp

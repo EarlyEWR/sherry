@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/latency_test.dir/workspace/src/tests/latency_test.cpp.o  -o latency_test  gtest/libgtest_main.a gtest/libgtest.a -pthread -lpthread 
+/usr/bin/c++     CMakeFiles/latency_test.dir/workspace/src/tests/latency_test.cpp.o  -o latency_test  gtest/libgtest_main.a gtest/libgtest.a -pthread 

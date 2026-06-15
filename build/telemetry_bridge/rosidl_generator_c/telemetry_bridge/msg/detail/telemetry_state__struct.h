@@ -20,6 +20,8 @@ extern "C"
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.h"
+// Member 'pose'
+#include "geometry_msgs/msg/detail/pose__struct.h"
 
 // Struct defined in msg/TelemetryState in the package telemetry_bridge.
 typedef struct telemetry_bridge__msg__TelemetryState
@@ -32,6 +34,7 @@ typedef struct telemetry_bridge__msg__TelemetryState
   double vy;
   double vz;
   uint64_t sequence_id;
+  geometry_msgs__msg__Pose pose;
 } telemetry_bridge__msg__TelemetryState;
 
 // Struct for a sequence of telemetry_bridge__msg__TelemetryState.

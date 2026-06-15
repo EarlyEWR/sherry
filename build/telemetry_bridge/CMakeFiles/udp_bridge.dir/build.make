@@ -111,6 +111,11 @@ udp_bridge: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 udp_bridge: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 udp_bridge: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 udp_bridge: /opt/ros/foxy/lib/libtracetools.so
+udp_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+udp_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+udp_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+udp_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+udp_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 udp_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 udp_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 udp_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

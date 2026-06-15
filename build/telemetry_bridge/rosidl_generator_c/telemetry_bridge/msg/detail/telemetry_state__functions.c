@@ -14,6 +14,8 @@
 // Include directives for member types
 // Member `header`
 #include "std_msgs/msg/detail/header__functions.h"
+// Member `pose`
+#include "geometry_msgs/msg/detail/pose__functions.h"
 
 bool
 telemetry_bridge__msg__TelemetryState__init(telemetry_bridge__msg__TelemetryState * msg)
@@ -33,6 +35,11 @@ telemetry_bridge__msg__TelemetryState__init(telemetry_bridge__msg__TelemetryStat
   // vy
   // vz
   // sequence_id
+  // pose
+  if (!geometry_msgs__msg__Pose__init(&msg->pose)) {
+    telemetry_bridge__msg__TelemetryState__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -51,6 +58,8 @@ telemetry_bridge__msg__TelemetryState__fini(telemetry_bridge__msg__TelemetryStat
   // vy
   // vz
   // sequence_id
+  // pose
+  geometry_msgs__msg__Pose__fini(&msg->pose);
 }
 
 bool
@@ -93,6 +102,12 @@ telemetry_bridge__msg__TelemetryState__are_equal(const telemetry_bridge__msg__Te
   if (lhs->sequence_id != rhs->sequence_id) {
     return false;
   }
+  // pose
+  if (!geometry_msgs__msg__Pose__are_equal(
+      &(lhs->pose), &(rhs->pose)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -124,6 +139,12 @@ telemetry_bridge__msg__TelemetryState__copy(
   output->vz = input->vz;
   // sequence_id
   output->sequence_id = input->sequence_id;
+  // pose
+  if (!geometry_msgs__msg__Pose__copy(
+      &(input->pose), &(output->pose)))
+  {
+    return false;
+  }
   return true;
 }
 

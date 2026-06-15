@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000076] (telemetry_bridge) JobQueued: {'identifier': 'telemetry_bridge', 'dependencies': OrderedDict([('telemetry_bridge', '/workspace/install/telemetry_bridge')])}
+[0.000207] (telemetry_bridge) JobStarted: {'identifier': 'telemetry_bridge'}
+[0.019053] (telemetry_bridge) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/workspace/build/telemetry_bridge', 'env': OrderedDict([('HOSTNAME', 'd0e278579866'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/telemetry_bridge/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DOCKER_TEST_RUN', '1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/workspace/install/telemetry_bridge:/opt/ros/foxy'), ('PWD', '/workspace/build/telemetry_bridge'), ('LC_ALL', 'C.UTF-8'), ('BUILD_TESTING', 'ON'), ('PYTHONPATH', '/workspace/install/telemetry_bridge/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/telemetry_bridge')]), 'shell': False}
+[0.025449] (telemetry_bridge) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini\n'}
+[0.025548] (telemetry_bridge) StdoutLine: {'line': b'Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini\n'}
+[0.025613] (telemetry_bridge) StdoutLine: {'line': b'   Site: 8f3997f66a3b\n'}
+[0.025703] (telemetry_bridge) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.025735] (telemetry_bridge) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.025765] (telemetry_bridge) StdoutLine: {'line': b'SetCTestConfiguration:CMakeCommand:/usr/bin/cmake\n'}
+[0.025793] (telemetry_bridge) StdoutLine: {'line': b'Create new tag: 20260614-0302 - Experimental\n'}
+[0.025821] (telemetry_bridge) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini\n'}
+[0.025885] (telemetry_bridge) StdoutLine: {'line': b'Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini\n'}
+[0.025974] (telemetry_bridge) StdoutLine: {'line': b'Test project /workspace/build/telemetry_bridge\n'}
+[0.026003] (telemetry_bridge) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.026031] (telemetry_bridge) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.026058] (telemetry_bridge) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.026089] (telemetry_bridge) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.026116] (telemetry_bridge) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.026143] (telemetry_bridge) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.026176] (telemetry_bridge) StdoutLine: {'line': b'test 1\n'}
+[0.026210] (telemetry_bridge) StdoutLine: {'line': b'    Start 1: latency_test\n'}
+[0.026244] (telemetry_bridge) StdoutLine: {'line': b'\n'}
+[0.026273] (telemetry_bridge) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/latency_test.txt" "--command" "/workspace/build/telemetry_bridge/latency_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml"\n'}
+[0.026308] (telemetry_bridge) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.054998] (telemetry_bridge) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':\n"}
+[0.055117] (telemetry_bridge) StdoutLine: {'line': b'1:  - /workspace/build/telemetry_bridge/latency_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml\n'}
+[0.056888] (telemetry_bridge) StdoutLine: {'line': b'1: [==========] Running 2 tests from 1 test case.\n'}
+[0.056959] (telemetry_bridge) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.057055] (telemetry_bridge) StdoutLine: {'line': b'1: [----------] 2 tests from LatencyTest\n'}
+[0.057110] (telemetry_bridge) StdoutLine: {'line': b'1: [ RUN      ] LatencyTest.MathVerification\n'}
+[0.057157] (telemetry_bridge) StdoutLine: {'line': b'1: [       OK ] LatencyTest.MathVerification (0 ms)\n'}
+[0.057201] (telemetry_bridge) StdoutLine: {'line': b'1: [ RUN      ] LatencyTest.ConcurrencyBurst\n'}
+[0.058951] (telemetry_bridge) StdoutLine: {'line': b'1: [       OK ] LatencyTest.ConcurrencyBurst (2 ms)\n'}
+[0.059006] (telemetry_bridge) StdoutLine: {'line': b'1: [----------] 2 tests from LatencyTest (2 ms total)\n'}
+[0.059051] (telemetry_bridge) StdoutLine: {'line': b'1: \n'}
+[0.059121] (telemetry_bridge) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.059165] (telemetry_bridge) StdoutLine: {'line': b'1: [==========] 2 tests from 1 test case ran. (2 ms total)\n'}
+[0.059232] (telemetry_bridge) StdoutLine: {'line': b'1: [  PASSED  ] 2 tests.\n'}
+[0.059281] (telemetry_bridge) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.059405] (telemetry_bridge) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'\n"}
+[0.059478] (telemetry_bridge) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'\n"}
+[0.064424] (telemetry_bridge) StdoutLine: {'line': b'1/2 Test #1: latency_test .....................   Passed    0.04 sec\n'}
+[0.064523] (telemetry_bridge) StdoutLine: {'line': b'test 2\n'}
+[0.064590] (telemetry_bridge) StdoutLine: {'line': b'    Start 2: monitor_test\n'}
+[0.064636] (telemetry_bridge) StdoutLine: {'line': b'\n'}
+[0.064680] (telemetry_bridge) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/monitor_test.txt" "--command" "/workspace/build/telemetry_bridge/monitor_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml"\n'}
+[0.064732] (telemetry_bridge) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.092442] (telemetry_bridge) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':\n"}
+[0.092542] (telemetry_bridge) StdoutLine: {'line': b'2:  - /workspace/build/telemetry_bridge/monitor_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml\n'}
+[0.096446] (telemetry_bridge) StdoutLine: {'line': b'2: Running main() from /opt/ros/foxy/src/gtest_vendor/src/gtest_main.cc\n'}
+[0.096540] (telemetry_bridge) StdoutLine: {'line': b'2: [==========] Running 1 test from 1 test case.\n'}
+[0.096595] (telemetry_bridge) StdoutLine: {'line': b'2: [----------] Global test environment set-up.\n'}
+[0.096644] (telemetry_bridge) StdoutLine: {'line': b'2: [----------] 1 test from StateMonitorTest\n'}
+[0.096690] (telemetry_bridge) StdoutLine: {'line': b'2: [ RUN      ] StateMonitorTest.DetectsGapsAndStalePackets\n'}
+[0.099846] (-) TimerEvent: {}
+[0.106646] (telemetry_bridge) StdoutLine: {'line': b'2: [       OK ] StateMonitorTest.DetectsGapsAndStalePackets (11 ms)\n'}
+[0.106760] (telemetry_bridge) StdoutLine: {'line': b'2: [----------] 1 test from StateMonitorTest (11 ms total)\n'}
+[0.106801] (telemetry_bridge) StdoutLine: {'line': b'2: \n'}
+[0.106839] (telemetry_bridge) StdoutLine: {'line': b'2: [----------] Global test environment tear-down\n'}
+[0.106878] (telemetry_bridge) StdoutLine: {'line': b'2: [==========] 1 test from 1 test case ran. (11 ms total)\n'}
+[0.106919] (telemetry_bridge) StdoutLine: {'line': b'2: [  PASSED  ] 1 test.\n'}
+[0.107731] (telemetry_bridge) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.107994] (telemetry_bridge) StdoutLine: {'line': b"2: -- run_test.py: inject classname prefix into gtest result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml'\n"}
+[0.108074] (telemetry_bridge) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml'\n"}
+[0.113934] (telemetry_bridge) StdoutLine: {'line': b'2/2 Test #2: monitor_test .....................   Passed    0.05 sec\n'}
+[0.114192] (telemetry_bridge) StdoutLine: {'line': b'\n'}
+[0.114249] (telemetry_bridge) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 2\n'}
+[0.114305] (telemetry_bridge) StdoutLine: {'line': b'\n'}
+[0.114342] (telemetry_bridge) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.114370] (telemetry_bridge) StdoutLine: {'line': b'gtest    =   0.09 sec*proc (2 tests)\n'}
+[0.114397] (telemetry_bridge) StdoutLine: {'line': b'\n'}
+[0.114423] (telemetry_bridge) StdoutLine: {'line': b'Total Test time (real) =   0.09 sec\n'}
+[0.117448] (telemetry_bridge) CommandEnded: {'returncode': 0}
+[0.117629] (telemetry_bridge) JobEnded: {'identifier': 'telemetry_bridge', 'rc': 0}
+[0.117930] (-) EventReactorShutdown: {}

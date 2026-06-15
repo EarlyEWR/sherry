@@ -85,6 +85,35 @@ CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
 CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
 CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
 CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Inertia.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/InertiaStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Point.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Point32.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PointStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Polygon.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PolygonStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Pose.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Pose2D.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PoseArray.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PoseStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovariance.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Quaternion.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/QuaternionStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Transform.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/TransformStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Twist.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/TwistStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovariance.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Vector3.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
+CMakeFiles/telemetry_bridge: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
 
 
 telemetry_bridge: CMakeFiles/telemetry_bridge

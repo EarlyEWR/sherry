@@ -1,0 +1,6 @@
+path: ../../models/datasets/basilisk
+train: images/train
+val: images/validation
+
+nc: 2
+names: ['docking_port', 'hatch']

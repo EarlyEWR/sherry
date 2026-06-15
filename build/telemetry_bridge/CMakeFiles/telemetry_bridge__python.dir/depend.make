@@ -111,6 +111,9 @@ CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg
 CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_latency_stats_s.c.o: rosidl_generator_c/telemetry_bridge/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
+CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.h
 CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/rosidl_runtime_c/string.h
 CMakeFiles/telemetry_bridge__python.dir/rosidl_generator_py/telemetry_bridge/msg/_telemetry_state_s.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h

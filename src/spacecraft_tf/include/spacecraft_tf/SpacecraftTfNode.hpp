@@ -27,8 +27,8 @@ private:
     rclcpp::Subscription<telemetry_bridge::msg::TelemetryState>::SharedPtr armstrong_sub_;
     rclcpp::Subscription<telemetry_bridge::msg::TelemetryState>::SharedPtr edison_sub_;
 
-    std::unique_ptr<tf2_ros::TransformBroadcaster>
-    std::unique_ptr<tf2_ros::StaticTransformBroadcaster>
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    std::unique_ptr<tf2_ros::StaticTransformBroadcaster> static_tf_broadcaster_;
 
     std::vector<double> armstrong_docking_hatch_offset_;
     std::vector<double> docking_port_offset_;

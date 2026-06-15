@@ -125,6 +125,11 @@ libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_types
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libtracetools.so
+libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libtelemetry_bridge_nodes.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

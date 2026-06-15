@@ -20,6 +20,11 @@ CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry
 CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/latency_stats__functions.c.o: rosidl_generator_c/telemetry_bridge/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__functions.h
+CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
+CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.h
+CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/rcutils/allocator.h
 CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/rcutils/macros.h
 CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o: /opt/ros/foxy/include/rcutils/testing/fault_injection.h

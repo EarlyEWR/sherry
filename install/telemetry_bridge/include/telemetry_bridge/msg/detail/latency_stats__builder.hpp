@@ -20,16 +20,48 @@ namespace msg
 namespace builder
 {
 
+class Init_LatencyStats_stale_packet_count
+{
+public:
+  explicit Init_LatencyStats_stale_packet_count(::telemetry_bridge::msg::LatencyStats & msg)
+  : msg_(msg)
+  {}
+  ::telemetry_bridge::msg::LatencyStats stale_packet_count(::telemetry_bridge::msg::LatencyStats::_stale_packet_count_type arg)
+  {
+    msg_.stale_packet_count = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::telemetry_bridge::msg::LatencyStats msg_;
+};
+
+class Init_LatencyStats_sequence_gap_count
+{
+public:
+  explicit Init_LatencyStats_sequence_gap_count(::telemetry_bridge::msg::LatencyStats & msg)
+  : msg_(msg)
+  {}
+  Init_LatencyStats_stale_packet_count sequence_gap_count(::telemetry_bridge::msg::LatencyStats::_sequence_gap_count_type arg)
+  {
+    msg_.sequence_gap_count = std::move(arg);
+    return Init_LatencyStats_stale_packet_count(msg_);
+  }
+
+private:
+  ::telemetry_bridge::msg::LatencyStats msg_;
+};
+
 class Init_LatencyStats_max_ms
 {
 public:
   explicit Init_LatencyStats_max_ms(::telemetry_bridge::msg::LatencyStats & msg)
   : msg_(msg)
   {}
-  ::telemetry_bridge::msg::LatencyStats max_ms(::telemetry_bridge::msg::LatencyStats::_max_ms_type arg)
+  Init_LatencyStats_sequence_gap_count max_ms(::telemetry_bridge::msg::LatencyStats::_max_ms_type arg)
   {
     msg_.max_ms = std::move(arg);
-    return std::move(msg_);
+    return Init_LatencyStats_sequence_gap_count(msg_);
   }
 
 private:

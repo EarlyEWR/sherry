@@ -101,6 +101,24 @@ bool telemetry_bridge__msg__latency_stats__convert_from_py(PyObject * _pymsg, vo
     ros_message->max_ms = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // sequence_gap_count
+    PyObject * field = PyObject_GetAttrString(_pymsg, "sequence_gap_count");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->sequence_gap_count = PyLong_AsUnsignedLongLong(field);
+    Py_DECREF(field);
+  }
+  {  // stale_packet_count
+    PyObject * field = PyObject_GetAttrString(_pymsg, "stale_packet_count");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->stale_packet_count = PyLong_AsUnsignedLongLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -175,6 +193,28 @@ PyObject * telemetry_bridge__msg__latency_stats__convert_to_py(void * raw_ros_me
     field = PyFloat_FromDouble(ros_message->max_ms);
     {
       int rc = PyObject_SetAttrString(_pymessage, "max_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // sequence_gap_count
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLongLong(ros_message->sequence_gap_count);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "sequence_gap_count", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // stale_packet_count
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLongLong(ros_message->stale_packet_count);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "stale_packet_count", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

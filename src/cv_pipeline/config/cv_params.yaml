@@ -1,0 +1,11 @@
+/**:
+  ros_parameters:
+    zmq_port: 5570
+    zmq_host: "127.0.0.1"
+    image_topic: "/camera/image_raw"
+    camera_info_topic: "/camera/camera_info"
+    detection_topic: "/cv_pipeline/detections"
+    model_path: "models/weights/yolo_docking.pt"
+    confidence_threshold: 0.5
+    image_encoding: "rgb8"
+    use_sim_time: true

@@ -1,0 +1,58 @@
+services:
+  check:
+    profiles: ["check"]
+    image: nvcr.io/nvida/pytorch:24.05-py3
+    runtime: nvidia
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    volumes:
+      - ../../:/workspace
+    working_dir: /workspace
+    command: python models/training/check_env.py
+
+  preprocess:
+    profiles: ["preprocess"]
+    image: nvcr.io/nvidia/
+    runtime: nvidia
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    volumes:
+      - ../../:/workspace
+    working_dir: /workspace
+    command: >
+      bash -c "pip install -q scipy &&
+              python models/training/preprocess_speed.py"
+  
+  train_speed:
+    profiles: ["speed"]
+    image: nvcr.io/nvidia/pytorch:24.05-py3
+    runtime: nvidia
+    ipdc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    volumes:
+      - ../../:/workspace
+    working_dir: /workspace
+    command: >
+      bash -c "pip install -q ultralytics scipy opencv-python &&
+              python models/training/train_speed.py"
+  
+  train_basilisk:
+    profiles: ["basilisk"]
+    image: nvcr.io/nvidia/pytorch:24.05-py3
+    runtime: nvidia
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    volumes:
+      - ../../:/workspace
+    working_dir: /workspace
+    command: >
+      bash -c "pip install -q ultralytics scipy opencv-python &&
+              python models/training/train_basilisk.py"

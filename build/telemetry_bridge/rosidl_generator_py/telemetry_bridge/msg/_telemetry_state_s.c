@@ -20,6 +20,10 @@ ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__pose__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool telemetry_bridge__msg__telemetry_state__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -126,6 +130,17 @@ bool telemetry_bridge__msg__telemetry_state__convert_from_py(PyObject * _pymsg, 
     }
     assert(PyLong_Check(field));
     ros_message->sequence_id = PyLong_AsUnsignedLongLong(field);
+    Py_DECREF(field);
+  }
+  {  // pose
+    PyObject * field = PyObject_GetAttrString(_pymsg, "pose");
+    if (!field) {
+      return false;
+    }
+    if (!geometry_msgs__msg__pose__convert_from_py(field, &ros_message->pose)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
 
@@ -235,6 +250,20 @@ PyObject * telemetry_bridge__msg__telemetry_state__convert_to_py(void * raw_ros_
     field = PyLong_FromUnsignedLongLong(ros_message->sequence_id);
     {
       int rc = PyObject_SetAttrString(_pymessage, "sequence_id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // pose
+    PyObject * field = NULL;
+    field = geometry_msgs__msg__pose__convert_to_py(&ros_message->pose);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "pose", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

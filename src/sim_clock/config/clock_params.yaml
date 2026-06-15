@@ -1,4 +1,4 @@
 /**:
-  ros_parameters:
+  ros__parameters:
     sim_frequency_hz: 100.0 # ticks per real second
     realtime_factor: 1.0 # 1.0 = real-time, 0.5 = half-speed, 2.0 = 2x fast

@@ -104,6 +104,35 @@ rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/s
 rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Inertia.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/InertiaStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Point.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Point32.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PointStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Polygon.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PolygonStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Pose.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Pose2D.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseArray.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovariance.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Quaternion.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/QuaternionStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Transform.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/TransformStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Twist.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovariance.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Vector3.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
+rosidl_generator_c/telemetry_bridge/msg/telemetry_state.h: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/build/telemetry_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /workspace/build/telemetry_bridge/rosidl_generator_c__arguments.json
 
@@ -171,11 +200,16 @@ telemetry_bridge__rosidl_generator_c_EXTERNAL_OBJECTS =
 libtelemetry_bridge__rosidl_generator_c.so: CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__functions.c.o
 libtelemetry_bridge__rosidl_generator_c.so: CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/rosidl_generator_c/telemetry_bridge/msg/detail/latency_stats__functions.c.o
 libtelemetry_bridge__rosidl_generator_c.so: CMakeFiles/telemetry_bridge__rosidl_generator_c.dir/build.make
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
-libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so

@@ -61,9 +61,10 @@
 /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/LatencyStats.idl
 /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/TelemetryState.msg
 /workspace/install/telemetry_bridge/share/telemetry_bridge/msg/LatencyStats.msg
+/workspace/install/telemetry_bridge/lib/libtelemetry_bridge_nodes.so
 /workspace/install/telemetry_bridge/lib/telemetry_bridge/udp_bridge
-/workspace/install/telemetry_bridge/share/telemetry_bridge/launch/bridge_launch.py
-/workspace/install/telemetry_bridge/share/telemetry_bridge/config/bridge_params.yaml
+/workspace/install/telemetry_bridge/lib/telemetry_bridge/udp_bridge
+/workspace/install/telemetry_bridge/lib/telemetry_bridge/libtelemetry_bridge_nodes.so
 /workspace/install/telemetry_bridge/share/ament_index/resource_index/package_run_dependencies/telemetry_bridge
 /workspace/install/telemetry_bridge/share/ament_index/resource_index/parent_prefix_path/telemetry_bridge
 /workspace/install/telemetry_bridge/share/telemetry_bridge/environment/ament_prefix_path.sh

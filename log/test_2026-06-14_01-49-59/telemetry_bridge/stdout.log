@@ -1,0 +1,66 @@
+UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini
+Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini
+   Site: 8f3997f66a3b
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+Create new tag: 20260614-0149 - Experimental
+UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini
+Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini
+Test project /workspace/build/telemetry_bridge
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: latency_test
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/latency_test.txt" "--command" "/workspace/build/telemetry_bridge/latency_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':
+1:  - /workspace/build/telemetry_bridge/latency_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml
+1: [==========] Running 2 tests from 1 test case.
+1: [----------] Global test environment set-up.
+1: [----------] 2 tests from LatencyTest
+1: [ RUN      ] LatencyTest.MathVerification
+1: [       OK ] LatencyTest.MathVerification (0 ms)
+1: [ RUN      ] LatencyTest.ConcurrencyBurst
+1: [       OK ] LatencyTest.ConcurrencyBurst (2 ms)
+1: [----------] 2 tests from LatencyTest (2 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 2 tests from 1 test case ran. (2 ms total)
+1: [  PASSED  ] 2 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'
+1: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'
+1/2 Test #1: latency_test .....................   Passed    0.04 sec
+test 2
+    Start 2: monitor_test
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/monitor_test.txt" "--command" "/workspace/build/telemetry_bridge/monitor_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':
+2:  - /workspace/build/telemetry_bridge/monitor_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml
+2: Running main() from /opt/ros/foxy/src/gtest_vendor/src/gtest_main.cc
+2: [==========] Running 1 test from 1 test case.
+2: [----------] Global test environment set-up.
+2: [----------] 1 test from StateMonitorTest
+2: [ RUN      ] StateMonitorTest.DetectsGapsAndStalePackets
+2: /workspace/build/telemetry_bridge/monitor_test: symbol lookup error: /workspace/install/telemetry_bridge/lib/libtelemetry_bridge__rosidl_typesupport_fastrtps_cpp.so: undefined symbol: _ZN13geometry_msgs3msg24typesupport_fastrtps_cpp24max_serialized_size_PoseERbm
+2: -- run_test.py: return code 127
+2: -- run_test.py: generate result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml' with failed test
+2: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml'
+2/2 Test #2: monitor_test .....................***Failed    0.07 sec
+
+50% tests passed, 1 tests failed out of 2
+
+Label Time Summary:
+gtest    =   0.11 sec*proc (2 tests)
+
+Total Test time (real) =   0.11 sec
+
+The following tests FAILED:
+	  2 - monitor_test (Failed)

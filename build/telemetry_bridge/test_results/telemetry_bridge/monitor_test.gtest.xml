@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="0" disabled="0" errors="0" timestamp="2026-06-11T06:01:52" time="0.01" name="AllTests">
-  <testsuite name="StateMonitorTest" tests="1" failures="0" disabled="0" errors="0" time="0.01">
-    <testcase name="DetectsGapsAndStalePackets" status="run" time="0.01" classname="telemetry_bridge.StateMonitorTest" />
+<testsuites tests="1" failures="0" disabled="0" errors="0" timestamp="2026-06-14T03:02:15" time="0.011" name="AllTests">
+  <testsuite name="StateMonitorTest" tests="1" failures="0" disabled="0" errors="0" time="0.011">
+    <testcase name="DetectsGapsAndStalePackets" status="run" time="0.011" classname="telemetry_bridge.StateMonitorTest" />
   </testsuite>
 </testsuites>

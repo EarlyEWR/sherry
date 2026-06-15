@@ -29,6 +29,8 @@ typedef struct telemetry_bridge__msg__LatencyStats
   double p95_ms;
   double p99_ms;
   double max_ms;
+  uint64_t sequence_gap_count;
+  uint64_t stale_packet_count;
 } telemetry_bridge__msg__LatencyStats;
 
 // Struct for a sequence of telemetry_bridge__msg__LatencyStats.

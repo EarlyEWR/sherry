@@ -99,6 +99,35 @@ rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosid
 rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Inertia.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/InertiaStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Point.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Point32.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PointStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Polygon.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PolygonStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Pose.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Pose2D.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseArray.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovariance.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Quaternion.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/QuaternionStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Transform.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/TransformStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Twist.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovariance.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Vector3.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
+rosidl_typesupport_fastrtps_c/telemetry_bridge/msg/detail/telemetry_state__rosidl_typesupport_fastrtps_c.h: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/build/telemetry_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /workspace/build/telemetry_bridge/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -151,12 +180,19 @@ libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: CMakeFiles/telemetry_brid
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_typesupport_fastrtps_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: libtelemetry_bridge__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: libtelemetry_bridge__rosidl_typesupport_fastrtps_cpp.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librmw.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_typesupport_fastrtps_cpp.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libtelemetry_bridge__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

@@ -99,6 +99,12 @@ rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /usr/lib/x8
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: libtelemetry_bridge__rosidl_typesupport_c.so
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/share/std_msgs/cmake/../../../lib/libstd_msgs__python.so
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib/libbuiltin_interfaces__python.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/share/geometry_msgs/cmake/../../../lib/libgeometry_msgs__python.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 rosidl_generator_py/telemetry_bridge/libtelemetry_bridge__python.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

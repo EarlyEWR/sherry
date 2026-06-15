@@ -37,7 +37,7 @@ void LatencyStats_fini_function(void * message_memory)
   typed_message->~LatencyStats();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember LatencyStats_message_member_array[5] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember LatencyStats_message_member_array[7] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -112,13 +112,43 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LatencyStats_
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "sequence_gap_count",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge::msg::LatencyStats, sequence_gap_count),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "stale_packet_count",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge::msg::LatencyStats, stale_packet_count),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers LatencyStats_message_members = {
   "telemetry_bridge::msg",  // message namespace
   "LatencyStats",  // message name
-  5,  // number of fields
+  7,  // number of fields
   sizeof(telemetry_bridge::msg::LatencyStats),
   LatencyStats_message_member_array,  // message members
   LatencyStats_init_function,  // function to initialize message memory (memory has to be allocated)

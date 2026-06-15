@@ -21,7 +21,7 @@ set(dependencies
 rosidl_generate_interfaces(${PROJECT_NAME}
     "../msg/TelemetryState.msg"
     "../msg/LatencyStats.msg"
-    DEPENDENCIES std_msgs
+    DEPENDENCIES std_msgs geometry_msgs
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../include)
@@ -44,16 +44,14 @@ ament_target_dependencies(udp_bridge ${dependencies})
 rosidl_target_interfaces(udp_bridge
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-# Install the executable to the package-specific lib directory
-install(TARGETS udp_bridge
-    DESTINATION lib/${PROJECT_NAME}
-)
+# Shared library — must be in lib/ so setup.bash's LD_LIBRARY_PATH picks it up
+install(TARGETS ${PROJECT_NAME}_nodes LIBRARY DESTINATION lib)
 
-install(DIRECTORY
-    ${CMAKE_CURRENT_SOURCE_DIR}/../launch
-    ${CMAKE_CURRENT_SOURCE_DIR}/../config
-    DESTINATION share/${PROJECT_NAME}
-)
+# Executable — must be in lib/${PROJECT_NAME}/ so `ros2 run` can find it
+install(TARGETS udp_bridge DESTINATION lib/${PROJECT_NAME})
+
+# Install the executable and shared library so the runtime linker can find them
+install(TARGETS udp_bridge ${PROJECT_NAME}_nodes DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   ament_add_gtest(latency_test ../tests/latency_test.cpp)

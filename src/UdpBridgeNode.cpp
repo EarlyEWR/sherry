@@ -1,7 +1,11 @@
 #include "telemetry_bridge/UdpBridgeNode.hpp"
 
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <unistd.h>
 #include <functional>
 #include <cstring>
+#include <cerrno>
 
 namespace telemetry_bridge {
 // ─── Wire layout (bytes, little-endian) ────────────────────────────────────
@@ -40,7 +44,7 @@ UdpBridgeNode::UdpBridgeNode()
     
     incoming_pub_ = this->create_publisher<telemetry_bridge::msg::TelemetryState>(
         "telemetry/incoming",
-        qos_depth_);
+        rclcpp::QoS(10).best_effort());
 
     // Open a UDP socket bound to udp_port for receiving
     socket_fd_ = ::socket(AF_INET, SOCK_DGRAM, 0);
@@ -52,7 +56,7 @@ UdpBridgeNode::UdpBridgeNode()
     local_addr_.sin_family = AF_INET;
     local_addr_.sin_port = htons(static_cast<uint16_t>(udp_port_));
     local_addr_.sin_addr.s_addr = INADDR_ANY;
-    ::bind(socket_fd_, reinterpret_cast<sockaddr *>(&local_addr_), sizeof(local_addr));
+    ::bind(socket_fd_, reinterpret_cast<sockaddr *>(&local_addr_), sizeof(local_addr_));
 
     remote_addr_.sin_family = AF_INET;
     remote_addr_.sin_port = htons(static_cast<uint16_t>(udp_port_));
@@ -75,7 +79,7 @@ UdpBridgeNode::~UdpBridgeNode()
 
 void UdpBridgeNode::handle_outgoing_state(const telemetry_bridge::msg::TelemetryState::SharedPtr msg)
 {
-    auot bytes = serialize_state(*msg);
+    auto bytes = serialize_state(*msg);
     ::sendto(
         socket_fd_,
         bytes.data(),
@@ -88,8 +92,12 @@ void UdpBridgeNode::handle_outgoing_state(const telemetry_bridge::msg::Telemetry
 void UdpBridgeNode::receive_loop()
 {
     std::array<uint8_t, PACKET_SIZE> buf{};
-    while (running) {
+    while (running_) {
         ssize_t n = ::recv(socket_fd_, buf.data(), buf.size(), 0);
+        if (n < 0) {
+            if (errno == EINTR) continue;
+            break;
+        }
         if (n == static_cast<ssize_t>(PACKET_SIZE)) {
             telemetry_bridge::msg::TelemetryState state;
             if (deserialize_state(buf.data(), static_cast<std::size_t>(n), state)) {
@@ -107,7 +115,7 @@ std::vector<uint8_t> UdpBridgeNode::serialize_state(const telemetry_bridge::msg:
 
     auto write = [&](double val) {
         std::memcpy(buf.data() + offset, &val, sizeof(double));
-        offset += seizeof(double);
+        offset += sizeof(double);
     };
     auto write_u64 = [&] (uint64_t val) {
         std::memcpy(buf.data() + offset, &val, sizeof(uint64_t));
@@ -159,7 +167,7 @@ bool UdpBridgeNode::deserialize_state(
     read_u64(out_msg.sequence_id);
     read(out_msg.pose.position.x);
     read(out_msg.pose.position.y);
-    read(out_msg.pose_position.z);
+    read(out_msg.pose.position.z);
     read(out_msg.pose.orientation.x);
     read(out_msg.pose.orientation.y);
     read(out_msg.pose.orientation.z);

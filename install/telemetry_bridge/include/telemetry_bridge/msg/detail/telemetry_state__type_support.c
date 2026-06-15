@@ -17,6 +17,10 @@
 #include "std_msgs/msg/header.h"
 // Member `header`
 #include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+// Member `pose`
+#include "geometry_msgs/msg/pose.h"
+// Member `pose`
+#include "geometry_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -37,7 +41,7 @@ void TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_fini_fun
   telemetry_bridge__msg__TelemetryState__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_member_array[8] = {
+static rosidl_typesupport_introspection_c__MessageMember TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_member_array[9] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -157,13 +161,28 @@ static rosidl_typesupport_introspection_c__MessageMember TelemetryState__rosidl_
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "pose",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge__msg__TelemetryState, pose),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_members = {
   "telemetry_bridge__msg",  // message namespace
   "TelemetryState",  // message name
-  8,  // number of fields
+  9,  // number of fields
   sizeof(telemetry_bridge__msg__TelemetryState),
   TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_member_array,  // message members
   TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -183,6 +202,8 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, telemetry_bridge, msg, TelemetryState)() {
   TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
+  TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_member_array[8].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Pose)();
   if (!TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_type_support_handle.typesupport_identifier) {
     TelemetryState__rosidl_typesupport_introspection_c__TelemetryState_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

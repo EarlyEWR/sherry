@@ -34,9 +34,23 @@ extern "C"
 {
 #endif
 
+#include "geometry_msgs/msg/detail/pose__functions.h"  // pose
 #include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_telemetry_bridge
+size_t get_serialized_size_geometry_msgs__msg__Pose(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_telemetry_bridge
+size_t max_serialized_size_geometry_msgs__msg__Pose(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_telemetry_bridge
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose)();
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_telemetry_bridge
 size_t get_serialized_size_std_msgs__msg__Header(
   const void * untyped_ros_message,
@@ -112,6 +126,20 @@ static bool _TelemetryState__cdr_serialize(
     cdr << ros_message->sequence_id;
   }
 
+  // Field name: pose
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->pose, cdr))
+    {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -171,6 +199,20 @@ static bool _TelemetryState__cdr_deserialize(
   // Field name: sequence_id
   {
     cdr >> ros_message->sequence_id;
+  }
+
+  // Field name: pose
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->pose))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -236,6 +278,10 @@ size_t get_serialized_size_telemetry_bridge__msg__TelemetryState(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name pose
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Pose(
+    &(ros_message->pose), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -319,6 +365,17 @@ size_t max_serialized_size_telemetry_bridge__msg__TelemetryState(
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: pose
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_geometry_msgs__msg__Pose(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

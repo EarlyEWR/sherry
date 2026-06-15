@@ -1,0 +1,70 @@
+[0.020s] Invoking command in '/workspace/build/telemetry_bridge': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.025s] UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini
+[0.025s] Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini
+[0.025s]    Site: 8f3997f66a3b
+[0.026s]    Build name: (empty)
+[0.026s]  Add coverage exclude regular expressions.
+[0.026s] SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+[0.026s] Create new tag: 20260614-0302 - Experimental
+[0.026s] UpdateCTestConfiguration  from :/workspace/build/telemetry_bridge/CTestConfiguration.ini
+[0.026s] Parse Config file:/workspace/build/telemetry_bridge/CTestConfiguration.ini
+[0.026s] Test project /workspace/build/telemetry_bridge
+[0.026s] Constructing a list of tests
+[0.026s] Done constructing a list of tests
+[0.026s] Updating test list for fixtures
+[0.026s] Added 0 tests to meet fixture requirements
+[0.026s] Checking test dependency graph...
+[0.026s] Checking test dependency graph end
+[0.026s] test 1
+[0.026s]     Start 1: latency_test
+[0.026s] 
+[0.026s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/latency_test.txt" "--command" "/workspace/build/telemetry_bridge/latency_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml"
+[0.026s] 1: Test timeout computed to be: 60
+[0.055s] 1: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':
+[0.055s] 1:  - /workspace/build/telemetry_bridge/latency_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml
+[0.057s] 1: [==========] Running 2 tests from 1 test case.
+[0.057s] 1: [----------] Global test environment set-up.
+[0.057s] 1: [----------] 2 tests from LatencyTest
+[0.057s] 1: [ RUN      ] LatencyTest.MathVerification
+[0.057s] 1: [       OK ] LatencyTest.MathVerification (0 ms)
+[0.057s] 1: [ RUN      ] LatencyTest.ConcurrencyBurst
+[0.059s] 1: [       OK ] LatencyTest.ConcurrencyBurst (2 ms)
+[0.059s] 1: [----------] 2 tests from LatencyTest (2 ms total)
+[0.059s] 1: 
+[0.059s] 1: [----------] Global test environment tear-down
+[0.059s] 1: [==========] 2 tests from 1 test case ran. (2 ms total)
+[0.059s] 1: [  PASSED  ] 2 tests.
+[0.059s] 1: -- run_test.py: return code 0
+[0.059s] 1: -- run_test.py: inject classname prefix into gtest result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'
+[0.059s] 1: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/latency_test.gtest.xml'
+[0.064s] 1/2 Test #1: latency_test .....................   Passed    0.04 sec
+[0.064s] test 2
+[0.064s]     Start 2: monitor_test
+[0.064s] 
+[0.065s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml" "--package-name" "telemetry_bridge" "--output-file" "/workspace/build/telemetry_bridge/ament_cmake_gtest/monitor_test.txt" "--command" "/workspace/build/telemetry_bridge/monitor_test" "--gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml"
+[0.065s] 2: Test timeout computed to be: 60
+[0.092s] 2: -- run_test.py: invoking following command in '/workspace/build/telemetry_bridge':
+[0.092s] 2:  - /workspace/build/telemetry_bridge/monitor_test --gtest_output=xml:/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml
+[0.096s] 2: Running main() from /opt/ros/foxy/src/gtest_vendor/src/gtest_main.cc
+[0.096s] 2: [==========] Running 1 test from 1 test case.
+[0.096s] 2: [----------] Global test environment set-up.
+[0.096s] 2: [----------] 1 test from StateMonitorTest
+[0.097s] 2: [ RUN      ] StateMonitorTest.DetectsGapsAndStalePackets
+[0.107s] 2: [       OK ] StateMonitorTest.DetectsGapsAndStalePackets (11 ms)
+[0.107s] 2: [----------] 1 test from StateMonitorTest (11 ms total)
+[0.107s] 2: 
+[0.107s] 2: [----------] Global test environment tear-down
+[0.107s] 2: [==========] 1 test from 1 test case ran. (11 ms total)
+[0.107s] 2: [  PASSED  ] 1 test.
+[0.108s] 2: -- run_test.py: return code 0
+[0.108s] 2: -- run_test.py: inject classname prefix into gtest result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml'
+[0.108s] 2: -- run_test.py: verify result file '/workspace/build/telemetry_bridge/test_results/telemetry_bridge/monitor_test.gtest.xml'
+[0.114s] 2/2 Test #2: monitor_test .....................   Passed    0.05 sec
+[0.114s] 
+[0.114s] 100% tests passed, 0 tests failed out of 2
+[0.114s] 
+[0.114s] Label Time Summary:
+[0.114s] gtest    =   0.09 sec*proc (2 tests)
+[0.114s] 
+[0.114s] Total Test time (real) =   0.09 sec
+[0.117s] Invoked command in '/workspace/build/telemetry_bridge' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -13,6 +13,8 @@
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__traits.hpp"
+// Member 'pose'
+#include "geometry_msgs/msg/detail/pose__traits.hpp"
 
 namespace rosidl_generator_traits
 {
@@ -31,11 +33,11 @@ inline const char * name<telemetry_bridge::msg::TelemetryState>()
 
 template<>
 struct has_fixed_size<telemetry_bridge::msg::TelemetryState>
-  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Header>::value> {};
+  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Pose>::value && has_fixed_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct has_bounded_size<telemetry_bridge::msg::TelemetryState>
-  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Header>::value> {};
+  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Pose>::value && has_bounded_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct is_message<telemetry_bridge::msg::TelemetryState>

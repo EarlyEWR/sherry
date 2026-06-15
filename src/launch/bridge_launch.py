@@ -24,7 +24,7 @@ def generate_launch_description():
         Node(
             package="telemetry_bridge",
             executable="udp_bridge",
-            namespace="endurance",
+            namespace="edison",
             name="udp_bridge_node",
             parameters=[bridge_config, {"udp_port": 8092, "use_sim_time": True}],
         ),

@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.hpp"
+// Member 'pose'
+#include "geometry_msgs/msg/detail/pose__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__telemetry_bridge__msg__TelemetryState __attribute__((deprecated))
@@ -37,7 +39,8 @@ struct TelemetryState_
   using Type = TelemetryState_<ContainerAllocator>;
 
   explicit TelemetryState_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_init)
+  : header(_init),
+    pose(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -53,7 +56,8 @@ struct TelemetryState_
   }
 
   explicit TelemetryState_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_alloc, _init)
+  : header(_alloc, _init),
+    pose(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -93,6 +97,9 @@ struct TelemetryState_
   using _sequence_id_type =
     uint64_t;
   _sequence_id_type sequence_id;
+  using _pose_type =
+    geometry_msgs::msg::Pose_<ContainerAllocator>;
+  _pose_type pose;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -141,6 +148,12 @@ struct TelemetryState_
     const uint64_t & _arg)
   {
     this->sequence_id = _arg;
+    return *this;
+  }
+  Type & set__pose(
+    const geometry_msgs::msg::Pose_<ContainerAllocator> & _arg)
+  {
+    this->pose = _arg;
     return *this;
   }
 
@@ -208,6 +221,9 @@ struct TelemetryState_
       return false;
     }
     if (this->sequence_id != other.sequence_id) {
+      return false;
+    }
+    if (this->pose != other.pose) {
       return false;
     }
     return true;

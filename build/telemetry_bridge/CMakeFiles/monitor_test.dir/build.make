@@ -113,6 +113,11 @@ monitor_test: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 monitor_test: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 monitor_test: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 monitor_test: /opt/ros/foxy/lib/libtracetools.so
+monitor_test: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+monitor_test: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+monitor_test: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+monitor_test: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+monitor_test: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 monitor_test: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 monitor_test: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 monitor_test: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so

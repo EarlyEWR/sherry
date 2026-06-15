@@ -1,25 +1,26 @@
 /**:
   ros__parameters:
-  max_thrust_n: 500.0 # maximum Newtons per thruster at 1.0 level
+    max_thrust_n: 500.0 # maximum Newtons per thruster at 1.0 level
 
-  # Thruster mix matrix: Each thruster has 6-DOF influence vector
-  # [force_x, force_y, force_z, torque_x, torque_y, torque_z]
-  # Positive values mean thruster contributes to that axis
-  thrusters:
-    - id: 0
-      name: "aft_main"
-      influence: [1.0, 0.0, 0.0, 0.0, 0.0, 0.0] # forward thrust
-    - id: 1
-      name: "fore_retro"
-      influence: [-1.0, 0.0, 0.0, 0.0, 0.0, 0.0] # braking
-    - id: 2
-      name: "port_lateral"
-      influence: [0.0, 1.0, 0.0, 0.0, 0.0, 0.0] # strafe left
-    - id: 3
-      name: "starboard_lateral"
-      influence: [0.0, -1.0, 0.0, 0.0, 0.0, 0.0] # strafe right
-    - id: 4
-      name: "yaw_cw"
-      influence: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # rotate clockwise
-    - id: 5
-      influence: [0.0, 0.0, 0.0, 0.0, 0.0, -1.0] # rotate counter-clockwise
+    # Thruster mix matrix: Each thruster has 6-DOF influence vector
+    # [force_x, force_y, force_z, torque_x, torque_y, torque_z]
+    # Positive values mean thruster contributes to that axis
+    thrusters:
+      - id: 0
+        name: "aft_main"
+        influence: [1.0, 0.0, 0.0, 0.0, 0.0, 0.0] # forward thrust
+      - id: 1
+        name: "fore_retro"
+        influence: [-1.0, 0.0, 0.0, 0.0, 0.0, 0.0] # braking
+      - id: 2
+        name: "port_lateral"
+        influence: [0.0, 1.0, 0.0, 0.0, 0.0, 0.0] # strafe left
+      - id: 3
+        name: "starboard_lateral"
+        influence: [0.0, -1.0, 0.0, 0.0, 0.0, 0.0] # strafe right
+      - id: 4
+        name: "yaw_cw"
+        influence: [0.0, 0.0, 0.0, 0.0, 0.0, -1.0] # rotate clockwise (negative torque about z)
+      - id: 5
+        name: "yaw_ccw"
+        influence: [0.0, 0.0, 0.0, 0.0, 0.0, 1.0] # rotate counter-clockwise

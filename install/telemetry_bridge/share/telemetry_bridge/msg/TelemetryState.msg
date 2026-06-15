@@ -13,3 +13,6 @@ float64 vz
 
 # Sequence number to detect out-of-order UDP packets or gaps
 uint64 sequence_id
+
+# Full 6-DOF pose: position (mirrors x/y/z above) + orientation quaternion
+geometry_msgs/Pose pose

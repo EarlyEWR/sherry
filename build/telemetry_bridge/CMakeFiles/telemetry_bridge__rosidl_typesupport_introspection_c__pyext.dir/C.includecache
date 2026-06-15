@@ -14,6 +14,34 @@ stddef.h
 stdint.h
 -
 
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+geometry_msgs/msg/detail/point__struct.h
+/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
+geometry_msgs/msg/detail/quaternion__struct.h
+/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/quaternion__struct.h
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
 rosidl_runtime_c/message_type_support_struct.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
@@ -647,6 +675,8 @@ stdint.h
 -
 std_msgs/msg/detail/header__struct.h
 rosidl_generator_c/telemetry_bridge/msg/detail/std_msgs/msg/detail/header__struct.h
+geometry_msgs/msg/detail/pose__struct.h
+rosidl_generator_c/telemetry_bridge/msg/detail/geometry_msgs/msg/detail/pose__struct.h
 
 rosidl_generator_c/telemetry_bridge/msg/detail/telemetry_state__type_support.h
 rosidl_typesupport_interface/macros.h

@@ -67,6 +67,10 @@ cdr_serialize(
   cdr << ros_message.p99_ms;
   // Member: max_ms
   cdr << ros_message.max_ms;
+  // Member: sequence_gap_count
+  cdr << ros_message.sequence_gap_count;
+  // Member: stale_packet_count
+  cdr << ros_message.stale_packet_count;
   return true;
 }
 
@@ -91,6 +95,12 @@ cdr_deserialize(
 
   // Member: max_ms
   cdr >> ros_message.max_ms;
+
+  // Member: sequence_gap_count
+  cdr >> ros_message.sequence_gap_count;
+
+  // Member: stale_packet_count
+  cdr >> ros_message.stale_packet_count;
 
   return true;
 }
@@ -134,6 +144,18 @@ get_serialized_size(
   // Member: max_ms
   {
     size_t item_size = sizeof(ros_message.max_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: sequence_gap_count
+  {
+    size_t item_size = sizeof(ros_message.sequence_gap_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: stale_packet_count
+  {
+    size_t item_size = sizeof(ros_message.stale_packet_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -193,6 +215,22 @@ max_serialized_size_LatencyStats(
   }
 
   // Member: max_ms
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: sequence_gap_count
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: stale_packet_count
   {
     size_t array_size = 1;
 

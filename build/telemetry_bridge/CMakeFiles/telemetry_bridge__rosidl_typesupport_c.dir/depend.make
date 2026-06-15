@@ -17,6 +17,9 @@ CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telem
 CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/latency_stats__type_support.cpp.o: rosidl_typesupport_c/telemetry_bridge/msg/rosidl_typesupport_c__visibility_control.h
 
 CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
+CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.h
 CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
 CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/telemetry_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/telemetry_bridge/msg/telemetry_state__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/string.h

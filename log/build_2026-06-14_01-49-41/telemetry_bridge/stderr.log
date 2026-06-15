@@ -1,0 +1,11 @@
+/workspace/src/UdpBridgeNode.cpp: In constructor ‘telemetry_bridge::UdpBridgeNode::UdpBridgeNode()’:
+/workspace/src/UdpBridgeNode.cpp:49:5: error: ‘state_sub_’ was not declared in this scope
+   49 |     state_sub_ = this->create_subscription<telemetry_bridge::msg::TelemetryState>(
+      |     ^~~~~~~~~~
+/workspace/src/UdpBridgeNode.cpp:52:20: error: ‘StateMonitorNode’ has not been declared
+   52 |         std::bind(&StateMonitorNode::handle_state, this, std::placeholders::_1));
+      |                    ^~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/telemetry_bridge_nodes.dir/build.make:76: CMakeFiles/telemetry_bridge_nodes.dir/workspace/src/UdpBridgeNode.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:303: CMakeFiles/telemetry_bridge_nodes.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

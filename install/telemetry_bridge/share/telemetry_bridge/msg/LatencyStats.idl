@@ -26,6 +26,10 @@ module telemetry_bridge {
       @verbatim (language="comment", text=
         " Maximum observed latency in this sample window")
       double max_ms;
+
+      uint64 sequence_gap_count;
+
+      uint64 stale_packet_count;
     };
   };
 };

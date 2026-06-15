@@ -12,3 +12,6 @@ float64 p99_ms
 
 # Maximum observed latency in this sample window
 float64 max_ms
+
+uint64 sequence_gap_count
+uint64 stale_packet_count

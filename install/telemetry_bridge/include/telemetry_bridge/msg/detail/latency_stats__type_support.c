@@ -37,7 +37,7 @@ void LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_fini_functio
   telemetry_bridge__msg__LatencyStats__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_message_member_array[5] = {
+static rosidl_typesupport_introspection_c__MessageMember LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_message_member_array[7] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -112,13 +112,43 @@ static rosidl_typesupport_introspection_c__MessageMember LatencyStats__rosidl_ty
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "sequence_gap_count",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge__msg__LatencyStats, sequence_gap_count),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "stale_packet_count",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge__msg__LatencyStats, stale_packet_count),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_message_members = {
   "telemetry_bridge__msg",  // message namespace
   "LatencyStats",  // message name
-  5,  // number of fields
+  7,  // number of fields
   sizeof(telemetry_bridge__msg__LatencyStats),
   LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_message_member_array,  // message members
   LatencyStats__rosidl_typesupport_introspection_c__LatencyStats_init_function,  // function to initialize message memory (memory has to be allocated)

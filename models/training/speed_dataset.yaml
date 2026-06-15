@@ -1,0 +1,6 @@
+path: ../../models/datasets/speedplus/yolo
+train: images/train
+val: images/validation
+
+nc: 1
+names: ['tango']

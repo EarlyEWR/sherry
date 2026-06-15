@@ -97,6 +97,16 @@ static bool _LatencyStats__cdr_serialize(
     cdr << ros_message->max_ms;
   }
 
+  // Field name: sequence_gap_count
+  {
+    cdr << ros_message->sequence_gap_count;
+  }
+
+  // Field name: stale_packet_count
+  {
+    cdr << ros_message->stale_packet_count;
+  }
+
   return true;
 }
 
@@ -143,6 +153,16 @@ static bool _LatencyStats__cdr_deserialize(
     cdr >> ros_message->max_ms;
   }
 
+  // Field name: sequence_gap_count
+  {
+    cdr >> ros_message->sequence_gap_count;
+  }
+
+  // Field name: stale_packet_count
+  {
+    cdr >> ros_message->stale_packet_count;
+  }
+
   return true;
 }
 
@@ -185,6 +205,18 @@ size_t get_serialized_size_telemetry_bridge__msg__LatencyStats(
   // field.name max_ms
   {
     size_t item_size = sizeof(ros_message->max_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name sequence_gap_count
+  {
+    size_t item_size = sizeof(ros_message->sequence_gap_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name stale_packet_count
+  {
+    size_t item_size = sizeof(ros_message->stale_packet_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -245,6 +277,20 @@ size_t max_serialized_size_telemetry_bridge__msg__LatencyStats(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: max_ms
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: sequence_gap_count
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: stale_packet_count
   {
     size_t array_size = 1;
 

@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_TelemetryState_pose
+{
+public:
+  explicit Init_TelemetryState_pose(::telemetry_bridge::msg::TelemetryState & msg)
+  : msg_(msg)
+  {}
+  ::telemetry_bridge::msg::TelemetryState pose(::telemetry_bridge::msg::TelemetryState::_pose_type arg)
+  {
+    msg_.pose = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::telemetry_bridge::msg::TelemetryState msg_;
+};
+
 class Init_TelemetryState_sequence_id
 {
 public:
   explicit Init_TelemetryState_sequence_id(::telemetry_bridge::msg::TelemetryState & msg)
   : msg_(msg)
   {}
-  ::telemetry_bridge::msg::TelemetryState sequence_id(::telemetry_bridge::msg::TelemetryState::_sequence_id_type arg)
+  Init_TelemetryState_pose sequence_id(::telemetry_bridge::msg::TelemetryState::_sequence_id_type arg)
   {
     msg_.sequence_id = std::move(arg);
-    return std::move(msg_);
+    return Init_TelemetryState_pose(msg_);
   }
 
 private:

@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "sim_clock/SimClockNode.hpp"
+#include "../../include/sim_clock/SimClockNode.hpp"
 
 int main(int argc, char * argv[])
 {

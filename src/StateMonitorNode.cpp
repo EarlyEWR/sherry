@@ -30,7 +30,7 @@ bool StateMonitorNode::has_state() const
 
 uint64_t StateMonitorNode::last_sequence_id() const
 {
-  std::lock_guard<std::mutex> lock(mutex_);s
+  std::lock_guard<std::mutex> lock(mutex_);
   return last_sequence_id_;
 }
 
@@ -99,6 +99,13 @@ void StateMonitorNode::publish_latency_stats()
   stats_msg.p95_ms = latency_monitor_.get_p95();
   stats_msg.p99_ms = latency_monitor_.get_p99();
   stats_msg.max_ms = 0.0;
+
+  {
+    std::lock_guard<std::mutex> lock(mutex_);
+    stats_msg.sequence_gap_count = sequence_gap_count_;
+    stats_msg.stale_packet_count = stale_packet_count_;
+  }
+
   stats_pub_->publish(stats_msg);
 }
 

@@ -39,6 +39,29 @@ max_serialized_size_Header(
 }  // namespace msg
 }  // namespace std_msgs
 
+namespace geometry_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const geometry_msgs::msg::Pose &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  geometry_msgs::msg::Pose &);
+size_t get_serialized_size(
+  const geometry_msgs::msg::Pose &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Pose(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace geometry_msgs
+
 
 namespace telemetry_bridge
 {
@@ -73,6 +96,10 @@ cdr_serialize(
   cdr << ros_message.vz;
   // Member: sequence_id
   cdr << ros_message.sequence_id;
+  // Member: pose
+  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.pose,
+    cdr);
   return true;
 }
 
@@ -106,6 +133,10 @@ cdr_deserialize(
 
   // Member: sequence_id
   cdr >> ros_message.sequence_id;
+
+  // Member: pose
+  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.pose);
 
   return true;
 }
@@ -170,6 +201,11 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: pose
+
+  current_alignment +=
+    geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.pose, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -255,6 +291,18 @@ max_serialized_size_TelemetryState(
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: pose
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Pose(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

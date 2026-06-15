@@ -14,10 +14,14 @@ SpacecraftTfNode::SpacecraftTfNode()
     tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
     static_tf_broadcaster_ = std::make_unique<tf2_ros::StaticTransformBroadcaster>(*this);
 
-    armstrong_sub = this->create_subscription<telemetry_bridge::msg::TelemetryState>(
-        "armstrong/telemetry/incoming", 10
-        std::bind(&SpacecraftTfNode::on_edison_state, this, std::pacleholders::_1));
+    armstrong_sub_ = this->create_subscription<telemetry_bridge::msg::TelemetryState>(
+        "armstrong/telemetry/incoming", 10,
+        std::bind(&SpacecraftTfNode::on_armstrong_state, this, std::placeholders::_1));
     
+    edison_sub_ = this->create_subscription<telemetry_bridge::msg::TelemetryState>(
+        "edison/telemetry/incoming", 10,
+        std::bind(&SpacecraftTfNode::on_edison_state, this, std::placeholders::_1));
+
     publish_static_transforms();
 }
 
@@ -76,11 +80,11 @@ void SpacecraftTfNode::publish_static_transforms()
         geometry_msgs::msg::TransformStamped t;
         t.header.stamp = this->get_clock()->now();
         t.header.frame_id = "edison/body";
-        t.child.frame_id = "edison/docking_port";
+        t.child_frame_id = "edison/docking_port";
         t.transform.translation.x = docking_port_offset_[0];
         t.transform.translation.y = docking_port_offset_[1];
         t.transform.translation.z = docking_port_offset_[2];
-        t.transform.translation.w = 1.0;
+        t.transform.rotation.w = 1.0;
         statics.push_back(t);
     }
 

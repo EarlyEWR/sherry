@@ -1,7 +1,7 @@
-#include "rosidl_typesupport_introspection_cpp/rclcpp"
+#include "rclcpp/rclcpp.hpp"
 #include "spacecraft_tf/SpacecraftTfNode.hpp"
 
-int main(int argc, char * arv[])
+int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<spacecraft_tf::SpacecraftTfNode>());

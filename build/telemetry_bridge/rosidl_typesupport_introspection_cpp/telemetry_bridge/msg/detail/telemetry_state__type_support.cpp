@@ -37,7 +37,7 @@ void TelemetryState_fini_function(void * message_memory)
   typed_message->~TelemetryState();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember TelemetryState_message_member_array[8] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember TelemetryState_message_member_array[9] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -157,13 +157,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember TelemetryStat
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "pose",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(telemetry_bridge::msg::TelemetryState, pose),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers TelemetryState_message_members = {
   "telemetry_bridge::msg",  // message namespace
   "TelemetryState",  // message name
-  8,  // number of fields
+  9,  // number of fields
   sizeof(telemetry_bridge::msg::TelemetryState),
   TelemetryState_message_member_array,  // message members
   TelemetryState_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -36,6 +36,8 @@ private:
     std::atomic<bool> running_{false};
     std::thread receiver_thread_;
 
+    static constexpr std::size_t PACKET_SIZE = 112;
+
     int udp_port_{8091};
     std::string target_ip_{"127.0.0.1"};
     int qos_depth_{10};
