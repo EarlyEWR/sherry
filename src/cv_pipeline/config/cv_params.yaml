@@ -1,5 +1,5 @@
 /**:
-  ros_parameters:
+  ros__parameters:
     zmq_port: 5570
     zmq_host: "127.0.0.1"
     image_topic: "/camera/image_raw"

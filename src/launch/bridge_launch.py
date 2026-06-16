@@ -8,6 +8,7 @@ def generate_launch_description():
     clock_config = PathJoinSubstitution([FindPackageShare("sim_clock"), "config", "clock_params.yaml"])
     tf_config = PathJoinSubstitution([FindPackageShare("spacecraft_tf"), "config", "tf_params.yaml"])
     thruster_config = PathJoinSubstitution([FindPackageShare("thruster_control"), "config", "thruster_mix.yaml"])
+    cv_config = PathJoinSubstitution([FindPackageShare("cv_pipeline"), "config", "cv_params.yaml"])
 
     return LaunchDescription([
 
@@ -53,5 +54,21 @@ def generate_launch_description():
             executable="thruster_control_node",
             name="thruster_control_node",
             parameters=[thruster_config, {"use_sim_time": True}],
+        ),
+
+        # Basilisk camera bridge
+        Node(
+            package="cv_pipeline",
+            executable="basilisk_camera_node",
+            name="basilisk_camera_node",
+            parameters=[cv_config, {"use_sim_time": True}],
+        ),
+
+        # CV inference pipeline
+        Node(
+            package="cv_pipeline",
+            executable="cv_pipeline_node",
+            name="cv_pipeline_node",
+            parameters=[cv_config, {"use_sim_time": True}],
         ),
     ])
